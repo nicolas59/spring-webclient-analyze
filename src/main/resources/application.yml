@@ -1,0 +1,4 @@
+logging.level.root: info
+
+app.download-url: https://uf8m8gb2k0.execute-api.eu-central-1.amazonaws.com
+app.api-key: A renseigner
