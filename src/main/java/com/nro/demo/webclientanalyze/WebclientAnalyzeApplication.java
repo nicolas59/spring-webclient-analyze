@@ -60,7 +60,7 @@ public class WebclientAnalyzeApplication implements CommandLineRunner {
                 .toBodilessEntity()
                 .block();
 
-		var detectLabels = client.get()
+	var detectLabels = client.get()
                 .uri(uriBuilder -> uriBuilder.path("/epsi/detect-labels/{url}").build(fileName))
                 .retrieve()
                 .bodyToMono(DetectLabelResponse.class)
